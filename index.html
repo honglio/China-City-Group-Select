@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="ionic.css">
+</head>
+<body>
+
+<div class="bar bar-header bar-positive">
+  <h1 class="title">中国省市县分组选择</h1>
+</div>
+
+<ul class="list" style="margin-top: 50px">
+    <li class="item">
+        位置：
+        <span>
+            <!-- 省/直辖市 -->
+            <select class="dropdown" title="region" id="dropDownChoice_Main">
+                <option value="" selected="selected"></option>
+            </select> 
+
+            <!-- 城市 -->
+            <select class="dropdown" title="state" id="optionholder_sub" disabled>
+                <option value="" selected="selected"></option>
+            </select>
+
+            <select class="" title="state" id="dropDownChoice_Sub" hidden>
+            </select>
+
+            <!-- 区/县 -->
+            <select class="dropdown" title="city" id="optionholder_2ndSub" disabled>
+                <option value="" selected="selected"></option>
+            </select>
+
+            <select class="" title="city" id="dropDownChoice_2ndSub" hidden>
+            </select>
+        </span>
+        
+    </li>
+</ul>
+
+<div class="bar bar-footer bar-balanced">
+  <div class="title">已选中: <span id="current"></span></div>
+</div>
+
+<script src="jquery-2.1.4.min.js"></script>
+<script src="data.js"></script>
+<script src="init.js"></script>
+<script src="event.js"></script>
+</body>
+</html>
